@@ -54,7 +54,7 @@ to simulate a game session. You must:
 3. Apply an Artifact multiplier of 2.5.
 4. Print the final results to the console.
 
-**NOTE:** Make sure to create a run configuration and select Application.  Then, in the *Build and Run* section, click on the *Browse* icon in the *Main Class* textbox.  Select the `GameMaster` class.  This is the class that has the main method.
+**NOTE:** Make sure to create a run configuration and select Application.  Then, in the *Build and Run* section, click on the *Browse* icon in the *Main Class* textbox.  Select the `GameMaster` class. This is the class that has the main method. In the **-cp** text box, select *SkillBuilder2.main*.
 
 
 ## 4. Testing with JUnit
