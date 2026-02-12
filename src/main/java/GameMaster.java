@@ -16,9 +16,9 @@ public class GameMaster {
     public static void applyPowerUp(double multiplier){
         int xPBoost = (int)(totalExperiencePoints * multiplier);
         totalExperiencePoints = xPBoost;
-        }
+    }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         // 1) Add 500 XP via quest
         GameMaster.gainExperience(500);
 
@@ -30,5 +30,5 @@ public class GameMaster {
 
         // 4) Print final XP
         System.out.println(GameMaster.getTeamXP());
-    }
+    }  // ← This closes main
 }
