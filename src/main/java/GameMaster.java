@@ -14,8 +14,7 @@ public class GameMaster {
     }
 
     public static void applyPowerUp(double multiplier) {
-        int xPBoost = (int)(totalExperiencePoints * multiplier);
-        totalExperiencePoints = xPBoost;
+        totalExperiencePoints = (int) (totalExperiencePoints * multiplier);
     }
 
     public static void resetGame() {
