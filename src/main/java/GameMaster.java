@@ -14,7 +14,7 @@ public class GameMaster {
     }
 
     public static void applyPowerUp(double multiplier) {
-        totalExperiencePoints = (int) (totalExperiencePoints * multiplier);
+        totalExperiencePoints = (int)(totalExperiencePoints * multiplier);
     }
 
     public static void resetGame() {
@@ -22,9 +22,16 @@ public class GameMaster {
     }
 
     public static void main(String[] args) {
-        GameMaster.gainExperience(500);
-        GameMaster.applyPowerUp(100);
-        GameMaster.applyPowerUp(2.5);
-        System.out.println(GameMaster.getTeamXP());
+        // 1) Add 500 XP via quest
+        gainExperience(500);
+
+        // 2) Apply a Potion of 100 XP
+        applyPowerUp(100);
+
+        // 3) Apply an Artifact multiplier of 2.5
+        applyPowerUp(2.5);
+
+        // 4) Print final XP
+        System.out.println(getTeamXP());
     }
 }
