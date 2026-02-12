@@ -1,15 +1,15 @@
 public class GameMaster {
     private static int totalExperiencePoints;
 
-    public static void gainExperience(int xp){
+    public static void gainExperience(int xp) {
         totalExperiencePoints += xp;
     }
 
-    public static int getTeamXP(){
+    public static int getTeamXP() {
         return totalExperiencePoints;
     }
 
-    public static void applyPowerUp(int xp){
+    public static void applyPowerUp(int xp) {
         totalExperiencePoints += xp;
     }
 
@@ -17,11 +17,12 @@ public class GameMaster {
         totalExperiencePoints = 0;
     }
 
-    public static void applyPowerUp(double multiplier){
+    public static void applyPowerUp(double multiplier) {
         int xPBoost = (int)(totalExperiencePoints * multiplier);
         totalExperiencePoints = xPBoost;
     }
 
+public class SkillBuilder2 {
     public static void main(String[] args) {
         // 1) Add 500 XP via quest
         GameMaster.gainExperience(500);
@@ -34,5 +35,6 @@ public class GameMaster {
 
         // 4) Print final XP
         System.out.println(GameMaster.getTeamXP());
-    }  // ← This closes main
+        }
+    }
 }
